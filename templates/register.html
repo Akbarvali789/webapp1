@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <style>
+    .form{
+    border: 1px solid brown;
+    margin: 0px 30%;
+    background:linear-gradient(129deg,brown,red);
+    border-radius: 30px;
+    padding-top: 20px;
+  
+   }
+   form{
+    box-shadow: 0 0 10px rgba(200, 75, 75, 0.6);
+    -moz-box-shadow: 0 0 10px rgba(200, 75, 75, 0.6);
+    -webkit-box-shadow: 0 0 10px rgba(200, 75, 75, 0.6);
+    -o-box-shadow: 0 0 10px rgba(200, 75, 75, 0.6);
+   }
+   body{
+    margin-top: 170px;
+   }
+   a{
+    text-decoration: none;
+   }
+   h1{
+    background:linear-gradient(129deg,brown,red);
+    margin: 0 25%;
+    border-radius: 20px;
+   }
+   h1:hover{
+       color: rgb(0, 0, 0);
+       background:linear-gradient(129deg,rgb(203, 160, 160),rgb(219, 133, 133));
+   }
+   .Rbutton{
+    background:linear-gradient(129deg,rgba(206, 204, 204, 0.6),rgba(206, 204, 204, 0.6));
+    box-shadow: 0 0 20px rgba(206, 204, 204, 0.8);
+    -moz-box-shadow: 0 0 20px  rgba(206, 204, 204, 0.8);
+    -webkit-box-shadow: 0 0 20px  rgba(206, 204, 204, 0.8);
+    -o-box-shadow: 0 0 20px  rgba(206, 204, 204, 0.8);
+    padding: 4px 15px;
+    border-radius: 20px;
+    
+   }
+   input{
+    border-radius: 20px;
+   }
+   body{
+    background-color: brown;
+    background-repeat: cover;
+   }
+  </style>
+</head>
+<body>
+  <center>
+    <form action="" class="form">
+      
+        <h1><span>REGISTER-FORM</span></h1>
+        <br>
+        <h4>if u already have an account <a href="{% url 'login:login' %}">signin/login</a> </h4>
+        <div>
+          <div>
+            <input type="text" placeholder="FIRST-NAME" name="FIRST-NAME" required>
+          </div>
+          <br>
+          <div>
+            <input type="text" placeholder="LAST-NAME" name="LAST-NAME" required>
+          </div>
+          <br>
+          <div>
+            <input type="email" placeholder="EMAIL" name="EMAIL" required>
+          </div>
+          <br>
+          <div>
+            <input type="password" placeholder="PASSWORD" name="PASSWORD" required>
+          </div>
+          <br>
+          <div>
+            <input type="password" placeholder="CONFIRM-PASSWORD" name="C PASSWORD" required>
+          </div><br>
+          <div>
+            <input type="checkbox"> <span>I Accept <a href="">Terms of Use?</a></span>
+          </div><br>
+          <div>
+            <button class="Rbutton"> <a href="{% url 'login:login' %}" style="color: rgb(23, 34, 44);" >REGISTER NOW</a> </button>
+          </div><br>
+        </div>
+    </form>
+  </center> 
+</body>
+</html>
